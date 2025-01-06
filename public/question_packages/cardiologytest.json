@@ -1,0 +1,61 @@
+[
+  {
+    "type": "header",
+    "version": "5.2.1",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  {
+    "type": "database",
+    "name": "berf9851_berkompeten"
+  },
+  {
+    "type": "table",
+    "name": "sl",
+    "database": "berf9851_berkompeten",
+    "data": [
+      {
+        "id": "433",
+        "question_packet_id": "1",
+        "subtopic_list_id": "571",
+        "question_number": "3",
+        "scenario": "Laki-laki berusia 56 tahun mengunjungi poliklinik dengan keluhan beban berat pada dada saat melakukan aktivitas fisik seperti naik tangga atau berjalan cepat sejak 2 bulan lalu. Keluhan mereda saat beristirahat. Memiliki riwayat hipertensi (tidak rutin minum obat) dan merokok sejak usia 21 tahun. Pada pemeriksaan fisik, tekanan darah 135/95 mmHg, denyut jantung 77 bpm, laju respirasi 19 kali per menit, suhu tubuh 36.8°C.",
+        "question": "Apa pemeriksaan penunjang yg tepat?",
+        "option_a": "CT angiografi arteri pulmonalis",
+        "option_b": "Pemeriksaan Biomarker Jantung",
+        "option_c": "Uji latih beban jantung",
+        "option_d": "CT scan toraks",
+        "option_e": "Doppler vaskuler",
+        "correct_answer": "C",
+        "limit_score": "80.00",
+        "image_url": "",
+        "discussion": "Kami mohon maaf, pembahasan soal ini masih dalam tahap pengembangan. Kami berupaya untuk segera menyediakannya. Terima kasih atas kesabaran dan dukungan Anda.",
+        "is_active": "1",
+        "created_at": "2024-04-17 15:16:40",
+        "updated_at": null,
+        "competence": "3.50"
+      },
+      {
+        "id": "434",
+        "question_packet_id": "2",
+        "subtopic_list_id": "571",
+        "question_number": "3",
+        "scenario": "Pak Johan, berumur 61 tahun, diantar ke Puskesmas dengan keluhan nyeri dada yang datang dan pergi sejak 3 minggu lalu. Keluhan mirip dengan beban berat di dada yang menjalar ke bahu dan rahang, tanpa disertai keringat dingin. Nyeri dada muncul saat beraktivitas fisik dan menghilang saat istirahat. Durasi nyeri kurang dari 15 menit. Memiliki riwayat hipertensi sejak 3 tahun yang lalu dan kebiasaan merokok. Pemeriksaan menunjukkan tekanan darah 145/85 mmHg, nadi 83 bpm, respirasi 21 kali per menit, suhu 36.5°C, EKG dan enzim jantung normal.",
+        "question": "Apakah kemungkinan diagnosis pasien?",
+        "option_a": "Gagal jantung",
+        "option_b": "Angina pectoris stabil",
+        "option_c": "STEMI",
+        "option_d": "NSTEMI",
+        "option_e": "Unstable angina pectoris",
+        "correct_answer": "B",
+        "limit_score": "80.00",
+        "image_url": "",
+        "discussion": "Kami mohon maaf, pembahasan soal ini masih dalam tahap pengembangan. Kami berupaya untuk segera menyediakannya. Terima kasih atas kesabaran dan dukungan Anda.",
+        "is_active": "1",
+        "created_at": "2024-04-17 15:16:40",
+        "updated_at": null,
+        "competence": "3.50"
+      }
+    ]
+  }
+]
+

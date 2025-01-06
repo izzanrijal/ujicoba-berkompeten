@@ -1,0 +1,15 @@
+[
+  {
+    "user_id": "046e914d-32e3-4f17-a0f6-e1a6c04297d7",
+    "test_code": "cardiology_pretest",
+    "score": 4,
+    "total_questions": 75,
+    "correct_answers": 3,
+    "confidence_counts": {
+      "very-confident": 3,
+      "unsure": 0,
+      "dont-know": 0
+    },
+    "end_time": "2025-01-05T02:43:46.791Z"
+  }
+]

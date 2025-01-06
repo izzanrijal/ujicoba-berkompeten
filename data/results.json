@@ -1,0 +1,28 @@
+[
+  {
+    "user_id": "aefb871d-388e-4758-a4eb-9472ecfafc84",
+    "test_code": "cardiology_pretest",
+    "score": 2.666666666666667,
+    "total_questions": 75,
+    "correct_answers": 2,
+    "confidence_counts": {
+      "very-confident": 3,
+      "unsure": 0,
+      "dont-know": 0
+    },
+    "end_time": "2025-01-05T02:58:56.010Z"
+  },
+  {
+    "user_id": "aa0b5391-8cd1-4069-8c3e-9c3b6137c933",
+    "test_code": "cardiologytest",
+    "score": 50,
+    "total_questions": 2,
+    "correct_answers": 1,
+    "confidence_counts": {
+      "very-confident": 1,
+      "unsure": 1,
+      "dont-know": 0
+    },
+    "end_time": "2025-01-05T10:17:33.741Z"
+  }
+]
