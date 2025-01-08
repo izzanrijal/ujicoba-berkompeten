@@ -24,5 +24,19 @@
       "dont-know": 0
     },
     "end_time": "2025-01-05T10:17:33.741Z"
+  },
+  {
+    "user_id": "8bd1a06c-6e5b-4fee-9674-a56df514f2bb",
+    "user_name": "Izzan",
+    "test_code": "cardiology_pretest",
+    "score": 4,
+    "total_questions": 75,
+    "correct_answers": 3,
+    "confidence_counts": {
+      "very-confident": 3,
+      "unsure": 1,
+      "dont-know": 0
+    },
+    "end_time": "2025-01-08T02:13:44.315Z"
   }
 ]

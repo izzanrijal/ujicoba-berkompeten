@@ -5,6 +5,7 @@ import { promises as fs } from 'fs'
 const dataDir = path.join(process.cwd(), 'data')
 const answersFilePath = path.join(dataDir, 'answers.json')
 const resultsFilePath = path.join(dataDir, 'results.json')
+const usersFilePath = path.join(dataDir, 'users.json')
 
 async function ensureFileExists(filePath: string) {
   try {
@@ -18,6 +19,13 @@ async function ensureFileExists(filePath: string) {
   }
 }
 
+async function getUserName(userId: string): Promise<string> {
+  const usersFileContents = await fs.readFile(usersFilePath, 'utf8')
+  const users = JSON.parse(usersFileContents)
+  const user = users.find((u: any) => u.user_id === userId)
+  return user ? user.name : 'Unknown User'
+}
+
 export async function POST(request: Request) {
   try {
     const data = await request.json()
@@ -28,6 +36,7 @@ export async function POST(request: Request) {
     // Ensure answers.json and results.json exist
     await ensureFileExists(answersFilePath)
     await ensureFileExists(resultsFilePath)
+    await ensureFileExists(usersFilePath)
     
     let answers = []
     let results = []
@@ -46,9 +55,12 @@ export async function POST(request: Request) {
       console.error('Error reading results file:', error)
     }
 
+    const userName = await getUserName(data.userId)
+
     // Process answers
     const processedAnswers = data.answers.map((answer: any) => ({
       user_id: data.userId,
+      user_name: userName,
       question_id: answer.question_id,
       answer: answer.answer,
       confidence: answer.confidence,
@@ -78,6 +90,7 @@ export async function POST(request: Request) {
 
     const result = {
       user_id: data.userId,
+      user_name: userName,
       test_code: data.testCode,
       score,
       total_questions: totalQuestions,
